@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8XWT/UikF3vz3Ogp7D1MenMPudLaDw7004xC8fwvZOg=",
+  "Source": "Payment_Gateway",
+  "BasePath": "_content/Payment_Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
