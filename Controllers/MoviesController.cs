@@ -11,7 +11,7 @@ namespace Payment_Gateway.Controllers
     [ApiController]
     public class MoviesController : Controller
     {
-        private readonly AppDbContext _context;//Git Hub
+        private readonly AppDbContext _context;//Git Hub Sandy
         public MoviesController(AppDbContext context)
         {
             _context = context;
