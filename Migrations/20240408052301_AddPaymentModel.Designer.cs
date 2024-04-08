@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Payment_Gateway.Data;
 
@@ -10,9 +11,10 @@ using Payment_Gateway.Data;
 namespace Payment_Gateway.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240408052301_AddPaymentModel")]
+    partial class AddPaymentModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,8 +51,8 @@ namespace Payment_Gateway.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<long>("Amount")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
 
                     b.Property<string>("ChargeId")
                         .IsRequired()

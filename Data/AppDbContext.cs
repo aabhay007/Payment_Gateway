@@ -10,5 +10,6 @@ namespace Payment_Gateway.Data
 
         }
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<PaymentModel> PaymentModels { get; set; }
     }
 }
